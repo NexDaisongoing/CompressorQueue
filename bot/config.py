@@ -20,7 +20,7 @@ try:
     API_HASH = config("API_HASH", default="aadb42caec01695fa0a77c09b3e0ef47")
     BOT_TOKEN = config("BOT_TOKEN", default="7619694891:AAHzBSznXRkZx5dz6MYKeNf86dp7PHMuLJg")
     DEV = 7543269959
-    OWNER = config("7543269959")
+    OWNER = config("OWNER", default="7543269959")
     FFMPEG = config(
         "FFMPEG",
         default='ffmpeg -i "{}" -preset veryfast -c:v libx264 -s 1280x720 -x264-params "bframes=8:psy-rd=1:ref=3:aq-mode=3:aq-strength=0.8:deblock=1,1" -metadata title="Encoded By Night Owls" -metadata:s:v title="Anime Sensei" -metadata:s:a title="The Night Owls" -metadata:s:s title="The Night Owls" -pix_fmt yuv420p -crf 26 -c:a libopus -b:a 32k -c:s copy -map 0 -ac 2 -ab 32k -vbr 2 -level 3.1 -threads 1 "{}"'
